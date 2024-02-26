@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="C4121005-7A23-4c68-88A1-04638B8ACDA7" name="R1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-31-44-2D" com_port="2000" bootmode="0" cx="98.000000" cy="113.000000" edit_left="125" edit_top="167">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="60043FE8-D1BE-4c24-B520-E925FFCFD683" name="R3" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-00-09-68" com_port="2002" bootmode="0" cx="515.000000" cy="112.000000" edit_left="542" edit_top="166">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="7D091BBA-66FD-4d23-8810-34F403F4B024" name="R2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-2F-61-B0" com_port="2001" bootmode="0" cx="311.000000" cy="112.000000" edit_left="343" edit_top="100">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="AAF1FF3D-B347-470f-AD95-79F49B961EB0" name="R10" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B0-18-36" com_port="2003" bootmode="1" cx="1215.000000" cy="80.000000" edit_left="1242" edit_top="134">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="C4121005-7A23-4c68-88A1-04638B8ACDA7" destDeviceID="7D091BBA-66FD-4d23-8810-34F403F4B024">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="168.183289" srcBoundRect_Y="139.797256" srcOffset_X="-15.000000" srcOffset_Y="4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="294.816711" tarBoundRect_Y="139.202744" tarOffset_X="-37.000000" tarOffset_Y="-16.000000" />
+        </line>
+        <line srcDeviceID="7D091BBA-66FD-4d23-8810-34F403F4B024" destDeviceID="60043FE8-D1BE-4c24-B520-E925FFCFD683">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="381.183777" srcBoundRect_Y="139.000000" srcOffset_X="-14.000000" srcOffset_Y="2.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="498.816223" tarBoundRect_Y="139.000000" tarOffset_X="-27.000000" tarOffset_Y="-16.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="2" filloption="0" color="8421504" upleftcorner="43,70" width="299" height="147" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="2" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="335,32" endpt="337,256" borderStyle="2" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="116,42" endpt="117,240" borderStyle="4" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="111" top="89" right="228" bottom="106" content="Private Network" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="11" top="315" right="507" bottom="378" content="#Route Static ke internet via 192.168.1.254&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]ip address 192.168.1.1 24&#x0D;&#x0A;[R1]ip route-static 0.0.0.0 0.0.0.0 192.168.1.254" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="10" top="382" right="526" bottom="465" content="#Route static ke internet via 1.2.3.254&#x0D;&#x0A;[R2-GigabitEthernet0/0/1]ip address 1.2.3.4 24&#x0D;&#x0A;[R2-GigabitEthernet0/0/0]ip address 192.168.1.254 24&#x0D;&#x0A;[R2]ip route-static 0.0.0.0 0.0.0.0 1.2.3.254" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="9" top="473" right="594" bottom="495" content="[R3-GigabitEthernet0/0/1]ip address 1.2.3.254 255.255.255.0" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="369" top="106" right="472" bottom="128" content="1.2.3.0/24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="147" top="172" right="290" bottom="194" content="192.168.1.0/24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="488" top="91" right="533" bottom="113" content=".254" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="259" top="96" right="304" bottom="118" content=".254" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="344" top="75" right="369" bottom="97" content=".4" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="625" top="223" right="1200" bottom="468" content="#Dynamic NAT&#x0D;&#x0A;[R2-GigabitEthernet0/0/1]ip address 1.2.3.4 255.255.255.0&#x0D;&#x0A;&#x0D;&#x0A;#create polling 1 consecutive address&#x0D;&#x0A;[R2]nat address-group 1 1.2.3.10 1.2.3.20&#x0D;&#x0A;&#x0D;&#x0A;#Create acl basic permit all trafic&#x0D;&#x0A;[R2]acl 2000&#x0D;&#x0A;[R2-acl-basic-2000]rule 5 permit source any&#x0D;&#x0A;&#x0D;&#x0A;#create rule izinkan nat outbound pada acl 2000 group 1&#x0D;&#x0A;[R2-GigabitEthernet0/0/1]nat outbound 2000 address-group 1" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-8323073" charset="1" />
+        <txttip left="625" top="19" right="1170" bottom="203" content="#Easy NAT&#x0D;&#x0A;[R2]nat address-group 1  #create polling bernama 1&#x0D;&#x0A;&#x0D;&#x0A;#create acl 2000 utk izinka sluruh trafi dari priv net.&#x0D;&#x0A;[R2]acl 2000&#x0D;&#x0A;[R2-acl-basic-2000]rule 5 permit source any&#x0D;&#x0A;&#x0D;&#x0A;#Create rule izinkan nat outbound pada acl 2000&#x0D;&#x0A;[R2-GigabitEthernet0/0/1]nat outbound 2000" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="315" top="18" right="350" bottom="40" content="NAT" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="625" top="478" right="1259" bottom="520" content="acl basic 2000 - 29999  #IP Address&#x0D;&#x0A;acl advanced 30000 - 59999  #IP address, protocl, port, services" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="10" top="503" right="506" bottom="545" content="[R1] ip route-static 0.0.0.0 0.0.0.0 192.168.1.254&#x0D;&#x0A;[R2] ip route-static 0.0.0.0 0.0.0.0 1.2.3.254" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1295" top="63" right="1310" bottom="85" content="Z" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1186" top="64" right="1201" bottom="86" content="Y" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="151" top="211" right="264" bottom="233" content="254 devices" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="342" top="173" right="514" bottom="215" content="address-group 1&#x0D;&#x0A;1.2.3.10 1.2.3.20" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="214" top="252" right="435" bottom="294" content="192.168.1.1 - 1.2.3.10&#x0D;&#x0A;192.168.1.2 - 1.2.3.11" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="11" top="8" right="136" bottom="40" content="Arie Budiansyah&#x0D;&#x0A;NAT ver1.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-1" txtbkcolor="-16744256" charset="1" />
+    </txttips>
+</topo>

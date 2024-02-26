@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="D2E125EC-0393-4432-85D5-B658901ED73E" name="PC1" poe="0" model="PC" settings=" -simpc_hostname pc1  -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-C7-26-B5  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 1  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-C7-26-B5" com_port="0" bootmode="0" cx="478.000000" cy="266.000000" edit_left="505" edit_top="320">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="C7D58180-0E36-49d7-8C99-44464D15C302" name="R3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-E1-76-17" com_port="2002" bootmode="0" cx="477.000000" cy="13.000000" edit_left="467" edit_top="30">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4" name="SW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-21-52-DB" com_port="2001" bootmode="0" cx="274.000000" cy="134.000000" edit_left="278" edit_top="183">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="84CAE76E-2651-4802-A894-BFF34B00BF22" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-19-37-30" com_port="2000" bootmode="0" cx="48.000000" cy="121.000000" edit_left="75" edit_top="175">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8591AEA2-B864-4633-A41E-F28DFB5DDA76" name="R2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-B0-20-BE" com_port="2004" bootmode="0" cx="485.000000" cy="128.000000" edit_left="504" edit_top="113">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4" destDeviceID="84CAE76E-2651-4802-A894-BFF34B00BF22">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="257.887512" srcBoundRect_Y="158.520081" srcOffset_X="-47.000000" srcOffset_Y="-19.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="118.112503" tarBoundRect_Y="150.479919" tarOffset_X="-9.000000" tarOffset_Y="-26.000000" />
+        </line>
+        <line srcDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4" destDeviceID="C7D58180-0E36-49d7-8C99-44464D15C302">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="338.094116" srcBoundRect_Y="138.889725" srcOffset_X="-28.000000" srcOffset_Y="-25.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="466.905884" tarBoundRect_Y="62.110283" tarOffset_X="-47.000000" tarOffset_Y="-14.000000" />
+        </line>
+        <line srcDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4" destDeviceID="8591AEA2-B864-4633-A41E-F28DFB5DDA76">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="344.166321" srcBoundRect_Y="159.772522" srcOffset_X="0.000000" srcOffset_Y="-17.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="468.833679" tarBoundRect_Y="156.227478" tarOffset_X="-44.000000" tarOffset_Y="-19.000000" />
+        </line>
+        <line srcDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4" destDeviceID="D2E125EC-0393-4432-85D5-B658901ED73E">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="337.255798" srcBoundRect_Y="184.459641" srcOffset_X="11.000000" srcOffset_Y="-3.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="468.744202" tarBoundRect_Y="269.540375" tarOffset_X="-65.000000" tarOffset_Y="9.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="0" filloption="1" color="0" upleftcorner="0,0" width="0" height="0" startpt="302,67" endpt="302,289" borderStyle="2" borderWidth="5" />
+    </shapes>
+    <txttips>
+        <txttip left="554" top="17" right="905" bottom="65" content="[R3]dhcp enable&#x0D;&#x0A;[R3]int g0/0/0&#x0D;&#x0A;[R3-GigabitEthernet0/0/0]ip address dhcp-alloc     " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711808" charset="1" />
+        <txttip left="554" top="71" right="905" bottom="119" content="[R2]dhcp enable&#x0D;&#x0A;[R2]int g0/0/0&#x0D;&#x0A;[R2-GigabitEthernet0/0/0]ip address dhcp-alloc" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711808" charset="1" />
+        <txttip left="554" top="126" right="1071" bottom="236" content="[R1]dhcp enable&#x0D;&#x0A;[R1]int g0/0/0&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]ip address 192.168.0.1 24&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp select interface&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp server dns-list 8.8.4.4&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp server lease day 0 hour 0 minute 10&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp server excluded-ip-address 192.168.0.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="37" top="195" right="147" bottom="227" content="dhcp server&#x0D;&#x0A;192.168.0.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+        <txttip left="304" top="324" right="459" bottom="419" content="Perintah CLI pada PC&#x0D;&#x0A;ipconfig&#x0D;&#x0A;ipconfig /renew&#x0D;&#x0A;ipconfig /release&#x0D;&#x0A;ping [ipAddress]&#x0D;&#x0A;tracert 1.1.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="313" top="225" right="400" bottom="242" content="dhcp client" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="6" top="3" right="247" bottom="66" content="IP Dynamic/DHCP Services&#x0D;&#x0A;Author: Arie Budiansyah&#x0D;&#x0A;Ver.1" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-1" txtbkcolor="-16744193" charset="1" />
+        <txttip left="8" top="297" right="299" bottom="407" content="Perintah CLI pada Router:&#x0D;&#x0A;-display dhcp client interface g/*/*&#x0D;&#x0A;-display arp all&#x0D;&#x0A;-dis ip int brief&#x0D;&#x0A;-dis this&#x0D;&#x0A;-ping [ipAddress]&#x0D;&#x0A;-undo perintah CLI #menghapus setingan" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="112" top="234" right="282" bottom="251" content=" dhcp select interface" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="309" top="76" right="472" bottom="93" content="ip address dhcp-alloc" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711808" charset="1" />
+        <txttip left="486" top="240" right="520" bottom="257" content="dhcp" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711808" charset="1" />
+    </txttips>
+</topo>

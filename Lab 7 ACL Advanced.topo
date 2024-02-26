@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="972C72D1-17C4-4109-8841-424BD83D08D4" name="R1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-E7-79-83" com_port="2000" bootmode="0" cx="276.000000" cy="93.000000" edit_left="325" edit_top="144">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="9BA07489-F647-4657-9247-97F92BA76E29" name="R2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-31-48-8F" com_port="2001" bootmode="0" cx="626.000000" cy="93.000000" edit_left="626" edit_top="140">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="7C00D115-0CD1-4021-BA3F-319602258E77" name="PC2" poe="0" model="PC" settings=" -simpc_hostname pc  -simpc_ip 2.2.2.254  -simpc_mask 255.255.255.0  -simpc_gateway 2.2.2.1  -simpc_mac 54-89-98-1C-15-CD  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-1C-15-CD" com_port="0" bootmode="0" cx="626.000000" cy="259.000000" edit_left="653" edit_top="313">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="2563A623-AF42-4c3e-B4E5-0699972073C8" name="PC1" poe="0" model="PC" settings=" -simpc_hostname pc1  -simpc_ip 1.1.1.254  -simpc_mask 255.255.255.0  -simpc_gateway 1.1.1.1  -simpc_mac 54-89-98-02-46-3B  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-02-46-3B" com_port="0" bootmode="0" cx="273.000000" cy="246.000000" edit_left="300" edit_top="300">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="972C72D1-17C4-4109-8841-424BD83D08D4" destDeviceID="9BA07489-F647-4657-9247-97F92BA76E29">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="346.183777" srcBoundRect_Y="120.000000" srcOffset_X="-14.000000" srcOffset_Y="-18.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="609.816223" tarBoundRect_Y="120.000000" tarOffset_X="-38.000000" tarOffset_Y="-16.000000" />
+        </line>
+        <line srcDeviceID="972C72D1-17C4-4109-8841-424BD83D08D4" destDeviceID="2563A623-AF42-4c3e-B4E5-0699972073C8">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="302.153412" srcBoundRect_Y="163.175461" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="300.846588" tarBoundRect_Y="229.824539" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="9BA07489-F647-4657-9247-97F92BA76E29" destDeviceID="7C00D115-0CD1-4021-BA3F-319602258E77">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="653.000000" srcBoundRect_Y="163.183762" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="653.000000" tarBoundRect_Y="242.816238" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="47" top="320" right="398" bottom="399" content="[R1]int g0/0/0&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]ip address 3.3.3.1 24&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]int g0/0/1&#x0D;&#x0A;[R1-GigabitEthernet0/0/1]ip address 1.1.1.1 24&#x0D;&#x0A;[R1]ip route-static 2.2.2.0 24 3.3.3.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="736" top="219" right="1087" bottom="298" content="[R2]int g0/0/0&#x0D;&#x0A;[R2-GigabitEthernet0/0/0]ip address 3.3.3.254&#x0D;&#x0A;[R2-GigabitEthernet0/0/0]int g0/0/1&#x0D;&#x0A;[R2-GigabitEthernet0/0/1]ip address 2.2.2.1 24&#x0D;&#x0A;[R2]ip route-static 1.1.1.0 24 3.3.3.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="217" top="178" right="296" bottom="195" content="1.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="563" top="197" right="642" bottom="214" content="2.2.2.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="679" top="727" right="1234" bottom="891" content="#Cek step ACL di R2&#x0D;&#x0A;[R2]dis acl all&#x0D;&#x0A; Total quantity of nonempty ACL number is 1 &#x0D;&#x0A;&#x0D;&#x0A;Basic ACL 2000, 2 rules&#x0D;&#x0A;Acl&apos;s step is 5&#x0D;&#x0A; rule 1 permit source 192.168.12.0 0.0.0.255 (5 matches)&#x0D;&#x0A; rule 2 deny (5 matches)" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="677" top="906" right="1360" bottom="969" content="Cara test: &#x0D;&#x0A;kalo di ping 2.2.2.2 dari R1 maka &#x0D;&#x0A;R2 akan menangkap trafik ping dan mencatatnya di acl all (xx matches)" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-32704" charset="1" />
+        <txttip left="46" top="406" right="669" bottom="516" content="#Pilih ngeseting ACL di R2 atau di R1. Tidak bisa dikeduanya&#x0D;&#x0A;[R1]acl 3000&#x0D;&#x0A;[R1-acl-basic-2000]rule 1 permit icmp source 1.1.1.0 0.0.0.255 de 2.2.2.0 0.0.0.25&#x0D;&#x0A;[R1-acl-basic-2000]rule 2 deny source any&#x0D;&#x0A;[R1-acl-basic-2000]q&#x0D;&#x0A;[R1]int g0/0/0&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]traffic-filter inbound acl 3000" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32704" charset="1" />
+        <txttip left="738" top="302" right="1361" bottom="412" content="#Pilih ngeseting ACL di R2 atau di R1. Tidak bisa dikeduanya&#x0D;&#x0A;[R2]acl 3000&#x0D;&#x0A;[R2-acl-basic-2000]rule 1 permit icmp source 1.1.1.0 0.0.0.255 de 2.2.2.0 0.0.0.25&#x0D;&#x0A;[R2-acl-basic-2000]rule 2 deny source any&#x0D;&#x0A;[R2-acl-basic-2000]q&#x0D;&#x0A;[R2]int g0/0/0&#x0D;&#x0A;[R2-GigabitEthernet0/0/0]traffic-filter inbound acl 3000" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711936" charset="1" />
+        <txttip left="737" top="5" right="1020" bottom="108" content="ACL Advanced&#x09;3000-3999&#x09;&#x0D;&#x0A;-Source IP Address&#x0D;&#x0A;-Purpose IP Address&#x0D;&#x0A;-Source port&#x0D;&#x0A;-Destination port" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-32704" charset="1" />
+        <txttip left="435" top="87" right="514" bottom="104" content="3.3.3.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="337" top="80" right="356" bottom="97" content=".1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="584" top="84" right="618" bottom="101" content=".254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="263" top="142" right="282" bottom="159" content=".1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="257" top="226" right="291" bottom="243" content=".254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="595" top="237" right="629" bottom="254" content=".254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="605" top="161" right="624" bottom="178" content=".1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="47" top="529" right="202" bottom="593" content="[PC1] ping 2.2.2.1&#x0D;&#x0A;[PC1] ping 2.2.2.254&#x0D;&#x0A;[R1] ping 2.2.2.1&#x0D;&#x0A;[R1] ping 2.2.2.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-65281" charset="1" />
+        <txttip left="7" top="8" right="238" bottom="71" content="ACL Advanced&#x0D;&#x0A;Author: Arie Budiansyah&#x0D;&#x0A;Ver.1." fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-1" txtbkcolor="-16744193" charset="1" />
+    </txttips>
+</topo>

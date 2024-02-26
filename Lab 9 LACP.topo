@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="B51C074D-2ACF-4903-BE53-613A3E0C23D0" name="PC1" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-A2-45-E9  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-A2-45-E9" com_port="0" bootmode="0" cx="259.000000" cy="349.000000" edit_left="286" edit_top="403">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="4760B7EB-AEB1-4ab6-9C42-CAA58EFB3D5E" name="AR6" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-FF-7F-2C" com_port="2003" bootmode="1" cx="858.000000" cy="198.000000" edit_left="885" edit_top="252">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="F5830215-06FA-4316-B00D-10C4373BE2A5" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-2C-60-0A" com_port="2002" bootmode="1" cx="148.000000" cy="204.000000" edit_left="175" edit_top="258">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="A61B8FBD-8791-4be4-BDED-7580C08706D4" name="PC2" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-25-49-C0  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-25-49-C0" com_port="0" bootmode="0" cx="852.000000" cy="349.000000" edit_left="879" edit_top="403">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="FBE48AC8-64F2-405e-9145-541E7133C40E" name="SW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-67-5F-55" com_port="2000" bootmode="0" cx="387.000000" cy="231.000000" edit_left="404" edit_top="221">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="D5A62CF1-5C64-436f-8A4B-020E96779106" name="SW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-50-38-2C" com_port="2001" bootmode="0" cx="669.000000" cy="228.000000" edit_left="687" edit_top="214">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="FBE48AC8-64F2-405e-9145-541E7133C40E" destDeviceID="D5A62CF1-5C64-436f-8A4B-020E96779106">
+            <interfacePair lineName="Copper" srcIndex="9" srcBoundRectIsMoved="0" srcBoundRect_X="457.181335" srcBoundRect_Y="257.540619" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="9" tarBoundRectIsMoved="1" tarBoundRect_X="652.818665" tarBoundRect_Y="255.459381" tarOffset_X="1.000000" tarOffset_Y="-2.000000" />
+            <interfacePair lineName="Copper" srcIndex="10" srcBoundRectIsMoved="0" srcBoundRect_X="463.181335" srcBoundRect_Y="263.540619" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="10" tarBoundRectIsMoved="0" tarBoundRect_X="658.818665" tarBoundRect_Y="261.459381" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="Copper" srcIndex="11" srcBoundRectIsMoved="0" srcBoundRect_X="451.181335" srcBoundRect_Y="251.540619" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="11" tarBoundRectIsMoved="0" tarBoundRect_X="646.818665" tarBoundRect_Y="249.459381" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="Copper" srcIndex="12" srcBoundRectIsMoved="0" srcBoundRect_X="469.181335" srcBoundRect_Y="269.540619" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="12" tarBoundRectIsMoved="0" tarBoundRect_X="664.818665" tarBoundRect_Y="267.459381" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="FBE48AC8-64F2-405e-9145-541E7133C40E" destDeviceID="B51C074D-2ACF-4903-BE53-613A3E0C23D0">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="382.249420" srcBoundRect_Y="287.270081" srcOffset_X="-45.000000" srcOffset_Y="-17.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="317.750580" tarBoundRect_Y="346.729919" tarOffset_X="-80.000000" tarOffset_Y="-15.000000" />
+        </line>
+        <line srcDeviceID="D5A62CF1-5C64-436f-8A4B-020E96779106" destDeviceID="A61B8FBD-8791-4be4-BDED-7580C08706D4">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="732.021667" srcBoundRect_Y="278.817596" srcOffset_X="-3.000000" srcOffset_Y="-13.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="842.978333" tarBoundRect_Y="352.182404" tarOffset_X="1.000000" tarOffset_Y="-23.000000" />
+        </line>
+        <line srcDeviceID="F5830215-06FA-4316-B00D-10C4373BE2A5" destDeviceID="FBE48AC8-64F2-405e-9145-541E7133C40E">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="217.910812" srcBoundRect_Y="235.847672" srcOffset_X="11.000000" srcOffset_Y="-28.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="371.089203" tarBoundRect_Y="253.152328" tarOffset_X="-36.000000" tarOffset_Y="-25.000000" />
+        </line>
+        <line srcDeviceID="D5A62CF1-5C64-436f-8A4B-020E96779106" destDeviceID="4760B7EB-AEB1-4ab6-9C42-CAA58EFB3D5E">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="738.649841" srcBoundRect_Y="248.230194" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="842.350159" tarBoundRect_Y="231.769806" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="12" top="7" right="409" bottom="71" content="LACP Link Aggregation Contron Protocol IEEE 802.3ad&#x0D;&#x0A;Bonding connnection.&#x0D;&#x0A;&#x0D;&#x0A;Author: Arie B." fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="162" top="277" right="189" bottom="294" content="WAN" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="509" top="213" right="604" bottom="230" content="LACP/BONDING" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="11" top="89" right="143" bottom="106" content="LACP without VLAN" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="11" top="428" right="604" bottom="726" content="[SW1]lacp priority 100&#x0D;&#x0A;[SW1]int Eth-Trunk 1&#x0D;&#x0A;[SW1-Eth-Trunk1]mode lacp-static &#x0D;&#x0A;[SW1-Eth-Trunk1]max active-linknumber 2&#x0D;&#x0A;&#x0D;&#x0A;[SW1-Eth-Trunk1]int g0/0/10&#x0D;&#x0A;[SW1-GigabitEthernet0/0/10]eth-trunk 1&#x0D;&#x0A;[SW1-GigabitEthernet0/0/10]lacp priority 100&#x0D;&#x0A;&#x0D;&#x0A;[SW1-GigabitEthernet0/0/10]int g0/0/11&#x0D;&#x0A;[SW1-GigabitEthernet0/0/11]eth-trunk 1&#x0D;&#x0A;Info: This operation may take a few seconds. Please wait for a moment...done.&#x0D;&#x0A;[SW1-GigabitEthernet0/0/11]lacp priority 100&#x0D;&#x0A;[SW1-GigabitEthernet0/0/11]int g0/0/12&#x0D;&#x0A;[SW1-GigabitEthernet0/0/12]eth-trunk 1&#x0D;&#x0A;[SW1-GigabitEthernet0/0/12]lacp priority 100&#x0D;&#x0A;[SW1-GigabitEthernet0/0/12]int g0/0/13&#x0D;&#x0A;[SW1-GigabitEthernet0/0/13]eth-trunk 1&#x0D;&#x0A;[SW1-GigabitEthernet0/0/13]lacp  priority 100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="631" top="421" right="1224" bottom="688" content="[SW2]int Eth-Trunk 1&#x0D;&#x0A;[SW2-Eth-Trunk1]mode lacp-static &#x0D;&#x0A;&#x0D;&#x0A;[SW2-Eth-Trunk1]int g0/0/10&#x0D;&#x0A;[SW2-GigabitEthernet0/0/10]eth-trunk 1&#x0D;&#x0A;Info: This operation may take a few seconds. Please wait for a moment...done&#x0D;&#x0A;&#x0D;&#x0A;[SW2-GigabitEthernet0/0/10]int g0/0/11&#x0D;&#x0A;[SW2-GigabitEthernet0/0/11]eth-trunk 1&#x0D;&#x0A;Info: This operation may take a few seconds. Please wait for a moment...done.&#x0D;&#x0A;&#x0D;&#x0A;[SW2-GigabitEthernet0/0/11]int g0/0/12&#x0D;&#x0A;[SW2-GigabitEthernet0/0/12]eth-trunk 1&#x0D;&#x0A;Info: This operation may take a few seconds. Please wait for a moment...done.&#x0D;&#x0A;&#x0D;&#x0A;[SW2-GigabitEthernet0/0/12]int g0/0/13&#x0D;&#x0A;[SW2-GigabitEthernet0/0/13]eth-trunk 1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-8323073" charset="1" />
+        <txttip left="9" top="742" right="617" bottom="1118" content="[SW1]dis eth-trunk 1&#x0D;&#x0A;Eth-Trunk1&apos;s state information is:&#x0D;&#x0A;Local:&#x0D;&#x0A;LAG ID: 1                   WorkingMode: STATIC                               &#x0D;&#x0A;Preempt Delay: Disabled     Hash arithmetic: According to SIP-XOR-DIP         &#x0D;&#x0A;System Priority: 100        System ID: 4c1f-cc67-5f55                         &#x0D;&#x0A;Least Active-linknumber: 1  Max Active-linknumber: 2                          &#x0D;&#x0A;Operate status: up          Number Of Up Port In Trunk: 2                     &#x0D;&#x0A;--------------------------------------------------------------------------------&#x0D;&#x0A;ActorPortName          Status   PortType PortPri PortNo PortKey PortState Weight&#x0D;&#x0A;GigabitEthernet0/0/10  Selected 1GE      100     11     305     10111100  1     &#x0D;&#x0A;GigabitEthernet0/0/11  Selected 1GE      100     12     305     10111100  1     &#x0D;&#x0A;GigabitEthernet0/0/12  Unselect 1GE      100     13     305     10100000  1     &#x0D;&#x0A;GigabitEthernet0/0/13  Unselect 1GE      100     14     305     10100000  1     &#x0D;&#x0A;&#x0D;&#x0A;Partner:&#x0D;&#x0A;--------------------------------------------------------------------------------&#x0D;&#x0A;ActorPortName          SysPri   SystemID        PortPri PortNo PortKey PortState&#x0D;&#x0A;GigabitEthernet0/0/10  32768    4c1f-cc50-382c  32768   11     305     10111100&#x0D;&#x0A;GigabitEthernet0/0/11  32768    4c1f-cc50-382c  32768   12     305     10111100&#x0D;&#x0A;GigabitEthernet0/0/12  32768    4c1f-cc50-382c  32768   13     305     10110000&#x0D;&#x0A;GigabitEthernet0/0/13  32768    4c1f-cc50-382c  32768   14     305     10110000&#x0D;&#x0A;    &#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32704" charset="1" />
+        <txttip left="379" top="190" right="421" bottom="207" content="ACTOR" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+    </txttips>
+</topo>

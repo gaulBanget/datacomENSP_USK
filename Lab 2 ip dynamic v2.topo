@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-21-52-DB" com_port="2001" bootmode="0" cx="330.000000" cy="159.000000" edit_left="357" edit_top="213">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="18A182E1-3E2B-4ffe-B2DD-2697E92EAD51" name="R1" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-74-1A-8C" com_port="2000" bootmode="0" cx="50.000000" cy="166.000000" edit_left="77" edit_top="220">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="6AB0D315-C695-4352-BBAE-1AB37DF73CEA" name="R3" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-2E-80-A2" com_port="2002" bootmode="0" cx="393.000000" cy="26.000000" edit_left="372" edit_top="49">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="E506A336-68EE-4054-9557-E881C0A35630" name="R2" poe="0" model="AR1220" settings="" system_mac="00-E0-FC-1C-63-01" com_port="2003" bootmode="0" cx="518.000000" cy="101.000000" edit_left="514" edit_top="88">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="1CD8BEBD-A45F-4a6b-A657-8A3F9BAE036F" name="PC2" poe="0" model="PC" settings=" -simpc_hostname PC2  -simpc_ip 192.168.0.252  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.0.1  -simpc_mac 54-89-98-18-73-44  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 8.8.4.4  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-18-73-44" com_port="0" bootmode="0" cx="502.000000" cy="243.000000" edit_left="529" edit_top="297">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="18A182E1-3E2B-4ffe-B2DD-2697E92EAD51" destDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="120.170280" srcBoundRect_Y="191.920746" srcOffset_X="-7.000000" srcOffset_Y="-25.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="313.829712" tarBoundRect_Y="187.079254" tarOffset_X="-29.000000" tarOffset_Y="-19.000000" />
+        </line>
+        <line srcDeviceID="6AB0D315-C695-4352-BBAE-1AB37DF73CEA" destDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="401.513611" srcBoundRect_Y="92.026802" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="375.486389" tarBoundRect_Y="146.973190" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="E506A336-68EE-4054-9557-E881C0A35630" destDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="503.735352" srcBoundRect_Y="140.730576" srcOffset_X="-55.000000" srcOffset_Y="-19.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="398.264648" tarBoundRect_Y="173.269424" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="08F9B8A7-62C1-4056-81FC-DFD31E4C13A4" destDeviceID="1CD8BEBD-A45F-4a6b-A657-8A3F9BAE036F">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="395.803528" srcBoundRect_Y="204.950562" srcOffset_X="4.000000" srcOffset_Y="-14.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="490.196472" tarBoundRect_Y="251.049438" tarOffset_X="-24.000000" tarOffset_Y="-30.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="16744448" upleftcorner="146,30" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="661" top="14" right="1304" bottom="361" content="[R3]dhcp enable&#x0D;&#x0A;[R3]int g0/0/0&#x0D;&#x0A;[R3-GigabitEthernet0/0/0]ip address dhcp-alloc&#x0D;&#x0A;[R3-GigabitEthernet0/0/0]display dhcp client interface g0/0/0&#x0D;&#x0A;DHCP client lease information on interface GigabitEthernet0/0/0 :&#x0D;&#x0A; Current machine state         : Bound&#x0D;&#x0A; Internet address assigned via : DHCP&#x0D;&#x0A; Physical address              : 00e0-fce1-7617&#x0D;&#x0A; IP address                    : 192.168.0.254&#x0D;&#x0A; Subnet mask                   : 255.255.255.0&#x0D;&#x0A; Gateway ip address            : 192.168.0.1&#x0D;&#x0A; DHCP server                   : 192.168.0.1&#x0D;&#x0A; Lease obtained at             : 2022-03-16 15:18:03&#x0D;&#x0A; Lease expires at              : 2022-03-16 16:28:03&#x0D;&#x0A; Lease renews at               : 2022-03-16 15:53:03&#x0D;&#x0A; Lease rebinds at              : 2022-03-16 16:19:18&#x0D;&#x0A; DNS                           : 8.8.4.4        down       down      " fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-32704" charset="1" />
+        <txttip left="748" top="139" right="1411" bottom="465" content="[R2]dhcp enable&#x0D;&#x0A;[R2]int g0/0/0&#x0D;&#x0A;[R2-GigabitEthernet0/0/0]ip address dhcp-alloc&#x0D;&#x0A;DHCP client lease information on interface GigabitEthernet0/0/0 :&#x0D;&#x0A; Current machine state         : Bound&#x0D;&#x0A; Internet address assigned via : DHCP&#x0D;&#x0A; Physical address              : 00e0-fcb0-20be&#x0D;&#x0A; IP address                    : 192.168.0.253&#x0D;&#x0A; Subnet mask                   : 255.255.255.0&#x0D;&#x0A; Gateway ip address            : 192.168.0.1&#x0D;&#x0A; DHCP server                   : 192.168.0.1&#x0D;&#x0A; Lease obtained at             : 2022-03-16 05:09:23&#x0D;&#x0A; Lease expires at              : 2022-03-16 06:19:23&#x0D;&#x0A; Lease renews at               : 2022-03-16 05:44:23&#x0D;&#x0A; Lease rebinds at              : 2022-03-16 06:10:38&#x0D;&#x0A; DNS                           : 8.8.4.4          up         up(s) " fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-8323073" charset="1" />
+        <txttip left="94" top="355" right="777" bottom="681" content="[R1]dhcp enable&#x0D;&#x0A;[R1]int g0/0/0&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]ip address 192.168.0.1 24&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp select interface&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp server dns-list 8.8.4.4&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp server lease day 0 hour 0 minute 10&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dhcp server excluded-ip-address 192.168.0.2&#x0D;&#x0A;[R1-GigabitEthernet0/0/0]dis this&#x0D;&#x0A;[V200R003C00]&#x0D;&#x0A;#&#x0D;&#x0A;interface GigabitEthernet0/0/0&#x0D;&#x0A; ip address 192.168.0.1 255.255.255.0 &#x0D;&#x0A; dhcp select interface&#x0D;&#x0A; dhcp server excluded-ip-address 192.168.0.2 &#x0D;&#x0A; dhcp server lease day 0 hour 1 minute 10 &#x0D;&#x0A; dhcp server dns-list 8.8.4.4 " fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="12" top="234" right="155" bottom="276" content="dhcp server&#x0D;&#x0A;192.168.0.1/24" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+        <txttip left="385" top="709" right="970" bottom="772" content="printah CLI check pada dhcp client:&#x0D;&#x0A;-Router: display dhcp client interface GigabitEthernet0/0/0&#x0D;&#x0A;-PC: ipconfig" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+        <txttip left="314" top="260" right="427" bottom="282" content="dhcp client" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+        <txttip left="815" top="538" right="1458" bottom="804" content="DHCP client lease information on interface GigabitEthernet0/0/0 :&#x0D;&#x0A; Current machine state         : Bound&#x0D;&#x0A; Internet address assigned via : DHCP&#x0D;&#x0A; Physical address              : 00e0-fce1-7617&#x0D;&#x0A; IP address                    : 192.168.0.254&#x0D;&#x0A; Subnet mask                   : 255.255.255.0&#x0D;&#x0A; Gateway ip address            : 192.168.0.1&#x0D;&#x0A; DHCP server                   : 192.168.0.1&#x0D;&#x0A; Lease obtained at             : 2022-03-16 04:03:17&#x0D;&#x0A; Lease expires at              : 2022-03-16 05:13:17&#x0D;&#x0A; Lease renews at               : 2022-03-16 04:38:17&#x0D;&#x0A; Lease rebinds at              : 2022-03-16 05:04:32&#x0D;&#x0A; DNS                           : 8.8.4.4" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+        <txttip left="15" top="61" right="207" bottom="124" content="dhcp: &#x0D;&#x0A;1. router to router&#x0D;&#x0A;2. Router to PC" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-1" txtbkcolor="-16777216" charset="1" />
+        <txttip left="5" top="713" right="383" bottom="796" content="Perintah CLI yang bs digunakan: &#x0D;&#x0A;-display arp all&#x0D;&#x0A;-dis ip int brief&#x0D;&#x0A;-undo perintah CLI #menghapus setingan" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="12" top="15" right="207" bottom="54" content="IP Dynamic v2&#x0D;&#x0A;Auth: Arie Budiansyah" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-1" txtbkcolor="-16744193" charset="1" />
+    </txttips>
+</topo>

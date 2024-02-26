@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="13989BF5-D4E4-4ab3-9D09-9B2AB1553B3B" name="AP1" poe="0" model="AP2050" settings=" -apMac 00-E0-FC-23-1D-20 -apSN 21023544831058228561" system_mac="00-E0-FC-23-1D-20" com_port="2000" bootmode="1" cx="692.000000" cy="154.000000" edit_left="719" edit_top="208">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="5" />
+            </slot>
+        </dev>
+        <dev id="DCD7D936-5064-4f28-9CC8-2C0BD0A49680" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-3E-2C-77" com_port="2001" bootmode="0" cx="437.000000" cy="148.000000" edit_left="464" edit_top="202">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="737648AD-FEFC-47d1-B5C7-E7BF16BAD9EA" name="PC1" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-8A-26-C6  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-8A-26-C6" com_port="0" bootmode="0" cx="189.000000" cy="163.000000" edit_left="216" edit_top="217">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="E3EA1DF0-2BAD-4a8b-A936-CF6F0A7DF9C9" name="STA1" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-F2-6D-CD  -simsta_check 0 " system_mac="54-89-98-F2-6D-CD" com_port="0" bootmode="1" cx="920.000000" cy="79.000000" edit_left="947" edit_top="133">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="B0C35B85-A879-4a86-85B6-4D1CC9A41078" name="PC2" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-98-29-88  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-98-29-88" com_port="0" bootmode="1" cx="944.000000" cy="206.000000" edit_left="971" edit_top="260">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="DAE5BF02-8153-4895-826A-D074A3643DA6" name="Cellphone1" poe="0" model="Cellphone" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-2F-7D-A4  -simsta_check 0 " system_mac="54-89-98-2F-7D-A4" com_port="0" bootmode="1" cx="887.000000" cy="299.000000" edit_left="914" edit_top="353">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="737648AD-FEFC-47d1-B5C7-E7BF16BAD9EA" destDeviceID="DCD7D936-5064-4f28-9CC8-2C0BD0A49680">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="259.104980" srcBoundRect_Y="187.392838" srcOffset_X="-18.000000" srcOffset_Y="-35.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="420.895020" tarBoundRect_Y="177.607162" tarOffset_X="-40.000000" tarOffset_Y="-33.000000" />
+        </line>
+        <line srcDeviceID="DCD7D936-5064-4f28-9CC8-2C0BD0A49680" destDeviceID="13989BF5-D4E4-4ab3-9D09-9B2AB1553B3B">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="507.171814" srcBoundRect_Y="176.015808" srcOffset_X="-9.000000" srcOffset_Y="26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="675.828186" tarBoundRect_Y="179.984192" tarOffset_X="-30.000000" tarOffset_Y="-22.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>

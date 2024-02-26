@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="20D5870E-30CD-4894-83A9-D3E131796938" name="PC3" poe="0" model="PC" settings=" -simpc_hostname pc3  -simpc_ip 192.168.10.101  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-0A-4A-F6  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-0A-4A-F6" com_port="0" bootmode="0" cx="554.000000" cy="314.000000" edit_left="546" edit_top="311">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="FEF5E418-FB84-4e83-B1D1-6EE9354BEDC6" name="PC4" poe="0" model="PC" settings=" -simpc_hostname pc4  -simpc_ip 192.168.20.101  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-5D-4D-53  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-5D-4D-53" com_port="0" bootmode="0" cx="704.000000" cy="316.000000" edit_left="743" edit_top="299">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="62912CBC-262F-44d3-882C-E721B46FA8A2" name="PC2" poe="0" model="PC" settings=" -simpc_hostname pc2  -simpc_ip 192.168.20.100  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-1C-5C-D8  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-1C-5C-D8" com_port="0" bootmode="0" cx="351.000000" cy="327.000000" edit_left="396" edit_top="317">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="ED3DCA22-F3B5-49a7-A38A-7A6B494652F1" name="SW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-65-3A-DD" com_port="2001" bootmode="0" cx="606.000000" cy="179.000000" edit_left="639" edit_top="165">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="BCAD5200-C59B-4954-AEE1-4E876CD86756" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-46-12-D5" com_port="2002" bootmode="0" cx="449.000000" cy="8.000000" edit_left="476" edit_top="62">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="CE971D92-6039-4823-A99E-0BFB3D14BF10" name="PC1" poe="0" model="PC" settings=" -simpc_hostname pc1  -simpc_ip 192.168.10.100  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-95-39-F9  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-95-39-F9" com_port="0" bootmode="0" cx="199.000000" cy="321.000000" edit_left="214" edit_top="312">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="505A26F3-5826-4b59-881D-7F7ABCAA8024" name="Sw1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-A9-42-79" com_port="2000" bootmode="0" cx="280.000000" cy="178.000000" edit_left="303" edit_top="161">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="505A26F3-5826-4b59-881D-7F7ABCAA8024" destDeviceID="CE971D92-6039-4823-A99E-0BFB3D14BF10">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="285.716492" srcBoundRect_Y="242.574585" srcOffset_X="-54.000000" srcOffset_Y="-1.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="247.283508" tarBoundRect_Y="310.425415" tarOffset_X="-67.000000" tarOffset_Y="-27.000000" />
+        </line>
+        <line srcDeviceID="505A26F3-5826-4b59-881D-7F7ABCAA8024" destDeviceID="62912CBC-262F-44d3-882C-E721B46FA8A2">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="325.576294" srcBoundRect_Y="243.984085" srcOffset_X="10.000000" srcOffset_Y="-9.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="359.423706" tarBoundRect_Y="315.015930" tarOffset_X="2.000000" tarOffset_Y="-23.000000" />
+        </line>
+        <line srcDeviceID="505A26F3-5826-4b59-881D-7F7ABCAA8024" destDeviceID="ED3DCA22-F3B5-49a7-A38A-7A6B494652F1">
+            <interfacePair lineName="Copper" srcIndex="23" srcBoundRectIsMoved="1" srcBoundRect_X="350.183563" srcBoundRect_Y="205.132462" srcOffset_X="-16.000000" srcOffset_Y="-21.000000" tarIndex="23" tarBoundRectIsMoved="1" tarBoundRect_X="589.816467" tarBoundRect_Y="205.867538" tarOffset_X="-33.000000" tarOffset_Y="-22.000000" />
+        </line>
+        <line srcDeviceID="ED3DCA22-F3B5-49a7-A38A-7A6B494652F1" destDeviceID="20D5870E-30CD-4894-83A9-D3E131796938">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="617.477905" srcBoundRect_Y="246.297684" srcOffset_X="-57.000000" srcOffset_Y="-5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="596.522095" tarBoundRect_Y="300.702332" tarOffset_X="-76.000000" tarOffset_Y="-13.000000" />
+        </line>
+        <line srcDeviceID="ED3DCA22-F3B5-49a7-A38A-7A6B494652F1" destDeviceID="FEF5E418-FB84-4e83-B1D1-6EE9354BEDC6">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="658.124329" srcBoundRect_Y="241.122742" srcOffset_X="6.000000" srcOffset_Y="-5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="705.875671" tarBoundRect_Y="307.877258" tarOffset_X="-80.000000" tarOffset_Y="-8.000000" />
+        </line>
+        <line srcDeviceID="BCAD5200-C59B-4954-AEE1-4E876CD86756" destDeviceID="505A26F3-5826-4b59-881D-7F7ABCAA8024">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="445.554688" srcBoundRect_Y="65.625473" srcOffset_X="-47.000000" srcOffset_Y="-17.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="337.445313" tarBoundRect_Y="174.374527" tarOffset_X="-30.000000" tarOffset_Y="-45.000000" />
+        </line>
+        <line srcDeviceID="BCAD5200-C59B-4954-AEE1-4E876CD86756" destDeviceID="ED3DCA22-F3B5-49a7-A38A-7A6B494652F1">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="505.205597" srcBoundRect_Y="66.809914" srcOffset_X="23.000000" srcOffset_Y="-9.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="603.794434" tarBoundRect_Y="174.190079" tarOffset_X="-13.000000" tarOffset_Y="-30.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="9" top="441" right="360" bottom="536" content="[S1]int g0/0/1&#x0D;&#x0A;[S1-GigabitEthernet0/0/1]port link-type access&#x0D;&#x0A;[S1-GigabitEthernet0/0/1]port default vlan 10&#x0D;&#x0A;[S1-GigabitEthernet0/0/1]int g0/0/2&#x0D;&#x0A;[S1-GigabitEthernet0/0/2]port link-type access&#x0D;&#x0A;[S1-GigabitEthernet0/0/2]port default vlan 20" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="436" top="416" right="863" bottom="573" content="[S1]vlan batch 10 20&#x0D;&#x0A;[S2]int g0/0/1&#x0D;&#x0A;[S2-GigabitEthernet0/0/1]port link-type access&#x0D;&#x0A;[S2-GigabitEthernet0/0/1]port default vlan 10&#x0D;&#x0A;[S2-GigabitEthernet0/0/1]int g0/0/2&#x0D;&#x0A;[S2-GigabitEthernet0/0/2]port link-type access&#x0D;&#x0A;[S2-GigabitEthernet0/0/2]port default vlan 20&#x0D;&#x0A;[S2]int g0/0/24&#x0D;&#x0A;[S2-GigabitEthernet0/0/24]port link-type trunk&#x0D;&#x0A;[S2-GigabitEthernet0/0/24]port trunk allow-pass vlan all" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="436" top="158" right="490" bottom="180" content="trunk" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="275" top="261" right="339" bottom="283" content="access" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="614" top="270" right="678" bottom="292" content="access" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="10" top="10" right="271" bottom="73" content="VLAN VBST dan Rapid PVST+&#x0D;&#x0A;Author: Arie Budiansyah&#x0D;&#x0A;Ver.1" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-1" txtbkcolor="-16744193" charset="1" />
+        <txttip left="144" top="380" right="254" bottom="397" content="192.168.10.100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="311" top="383" right="421" bottom="400" content="192.168.20.100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="512" top="382" right="622" bottom="399" content="192.168.10.101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="670" top="381" right="780" bottom="398" content="192.168.20.101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="14" top="170" right="254" bottom="228" content="Term of VLAN:&#x0D;&#x0A;1. Trunk - access - hybrid&#x0D;&#x0A;2. Tagged - untagged" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="8" top="538" right="435" bottom="586" content="[S1]int g0/0/24&#x0D;&#x0A;[S1-GigabitEthernet0/0/24]port link-type trunk&#x0D;&#x0A;[S1-GigabitEthernet0/0/24]port trunk allow-pass vlan all" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="13" top="416" right="168" bottom="433" content="[S1]vlan batch 10 20" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32640" charset="1" />
+        <txttip left="9" top="592" right="194" bottom="624" content="[PC1]ping 192.168.10.101&#x0D;&#x0A;[PC2]ping 192.168.20.101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-65281" charset="1" />
+        <txttip left="435" top="590" right="620" bottom="622" content="[PC3]ping 192.168.10.100&#x0D;&#x0A;[PC4]ping 192.168.20.100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-65281" charset="1" />
+        <txttip left="18" top="88" right="272" bottom="158" content="&lt;Huawei&gt; undo terminal monitor&#x0D;&#x0A;&lt;Huawei&gt;system-view&#x0D;&#x0A;[Huawei]sysname R1&#x0D;&#x0A;[R1]" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="424" top="98" right="526" bottom="115" content="STP/RSTP/MSTP" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="424" top="629" right="836" bottom="708" content="]int g0/0/2&#x0D;&#x0A;[SW1-GigabitEthernet0/0/2]port link-type hybrid &#x0D;&#x0A;[SW1-GigabitEthernet0/0/2]port hybrid tagged vlan 10&#x0D;&#x0A;[SW1-GigabitEthernet0/0/2]port hybrid untagged vlan 20&#x0D;&#x0A;[SW1-GigabitEthernet0/0/2]port hybrid pvid vlan 20" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="103" top="720" right="530" bottom="768" content="[SW1-GigabitEthernet0/0/2]int g0/0/24&#x0D;&#x0A;[SW1-GigabitEthernet0/0/24]port link-type hybrid &#x0D;&#x0A;[SW1-GigabitEthernet0/0/24]port hybrid tagged vlan 10 20" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="8" top="631" right="420" bottom="710" content="int g0/0/1&#x0D;&#x0A;[SW1-GigabitEthernet0/0/1]port link-type hybrid &#x0D;&#x0A;[SW1-GigabitEthernet0/0/1]port hybrid tagged vlan 20&#x0D;&#x0A;[SW1-GigabitEthernet0/0/1]port hybrid untagged vlan 10&#x0D;&#x0A;[SW1-GigabitEthernet0/0/1]port hybrid pvid vlan 10" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="445" top="226" right="494" bottom="243" content="Hybrid" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="231" top="402" right="356" bottom="419" content="hybrid tag untag" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="594" top="360" right="719" bottom="377" content="hybrid tag untag" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+    </txttips>
+</topo>

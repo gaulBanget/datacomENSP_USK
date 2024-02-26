@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="8BEB222F-946C-400f-BA14-BBFB67925EEA" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-FC-17-C2" com_port="2001" bootmode="0" cx="394.000000" cy="136.000000" edit_left="421" edit_top="190">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="5C3FC599-224B-45d8-96A5-A1B55AD61273" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-1C-3B-5E" com_port="2002" bootmode="0" cx="483.000000" cy="243.000000" edit_left="510" edit_top="297">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="A84D26A7-CE56-4922-B8AD-7AF4F4D63F42" name="PC2" poe="0" model="PC" settings=" -simpc_hostname PC2  -simpc_ip 10.1.1.2  -simpc_mask 255.255.255.0  -simpc_gateway 10.1.1.1  -simpc_mac 54-89-98-41-3D-45  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 8.8.8.8  -simpc_dns2 8.8.4.4  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-41-3D-45" com_port="0" bootmode="0" cx="618.000000" cy="136.000000" edit_left="645" edit_top="190">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="738C1907-147B-4630-926B-E06C399F773E" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-79-14-EB" com_port="2000" bootmode="0" cx="302.000000" cy="242.000000" edit_left="329" edit_top="296">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="5A1BE502-BA22-4e75-9CAB-C63E8E5E0A5F" name="PC1" poe="0" model="PC" settings=" -simpc_hostname PC1  -simpc_ip 10.1.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 10.1.1.1  -simpc_mac 54-89-98-FF-16-C7  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 8.8.8.8  -simpc_dns2 8.8.4.4  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-FF-16-C7" com_port="0" bootmode="0" cx="191.000000" cy="141.000000" edit_left="218" edit_top="195">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="5A1BE502-BA22-4e75-9CAB-C63E8E5E0A5F" destDeviceID="738C1907-147B-4630-926B-E06C399F773E">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="249.940369" srcBoundRect_Y="197.062866" srcOffset_X="-8.000000" srcOffset_Y="-29.000000" tarIndex="23" tarBoundRectIsMoved="1" tarBoundRect_X="297.059631" tarBoundRect_Y="239.937134" tarOffset_X="-56.000000" tarOffset_Y="6.000000" />
+        </line>
+        <line srcDeviceID="738C1907-147B-4630-926B-E06C399F773E" destDeviceID="8BEB222F-946C-400f-BA14-BBFB67925EEA">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="357.305786" srcBoundRect_Y="236.386810" srcOffset_X="-6.000000" srcOffset_Y="15.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="392.694214" tarBoundRect_Y="195.613190" tarOffset_X="-44.000000" tarOffset_Y="-15.000000" />
+        </line>
+        <line srcDeviceID="8BEB222F-946C-400f-BA14-BBFB67925EEA" destDeviceID="5C3FC599-224B-45d8-96A5-A1B55AD61273">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="448.615051" srcBoundRect_Y="196.200104" srcOffset_X="0.000000" srcOffset_Y="-16.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="482.384949" tarBoundRect_Y="236.799896" tarOffset_X="-43.000000" tarOffset_Y="16.000000" />
+        </line>
+        <line srcDeviceID="5C3FC599-224B-45d8-96A5-A1B55AD61273" destDeviceID="738C1907-147B-4630-926B-E06C399F773E">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="466.816895" srcBoundRect_Y="269.761414" srcOffset_X="-32.000000" srcOffset_Y="6.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="372.183105" tarBoundRect_Y="269.238586" tarOffset_X="-23.000000" tarOffset_Y="6.000000" />
+        </line>
+        <line srcDeviceID="5C3FC599-224B-45d8-96A5-A1B55AD61273" destDeviceID="A84D26A7-CE56-4922-B8AD-7AF4F4D63F42">
+            <interfacePair lineName="Copper" srcIndex="23" srcBoundRectIsMoved="1" srcBoundRect_X="543.842773" srcBoundRect_Y="243.176453" srcOffset_X="6.000000" srcOffset_Y="-4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="611.157227" tarBoundRect_Y="189.823547" tarOffset_X="-66.000000" tarOffset_Y="-27.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="775" top="11" right="986" bottom="33" content="undo terminal monitor" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-128" charset="1" />
+        <txttip left="305" top="223" right="326" bottom="242" content="S1" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="405" top="114" right="426" bottom="133" content="S2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="504" top="223" right="525" bottom="242" content="S3" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="193" top="116" right="222" bottom="135" content="PC1" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="608" top="111" right="637" bottom="130" content="PC2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="1" top="1" right="232" bottom="43" content="Lab. STP&#x0D;&#x0A;Author: Arie Budiansyah" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-1" txtbkcolor="-32768" charset="1" />
+        <txttip left="7" top="295" right="294" bottom="365" content="Persiapan:&#x0D;&#x0A;1. 3 buah SW S570&#x0D;&#x0A;2. hubungkan seperti gambar topo.&#x0D;&#x0A;3. konfigurasi msg2 SW." fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="149" top="202" right="213" bottom="219" content="10.1.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="610" top="205" right="674" bottom="222" content="10.1.1.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="6" top="369" right="417" bottom="473" content="&lt;Huawei&gt;undo terminal monitor &#x0D;&#x0A;Info: Current terminal monitor is off.&#x0D;&#x0A;&lt;Huawei&gt;system-view &#x0D;&#x0A;Enter system view, return user view with Ctrl+Z.&#x0D;&#x0A;[Huawei]sysname S1&#x0D;&#x0A;[S1]stp mode stp " fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-1" txtbkcolor="-16777216" charset="1" />
+        <txttip left="6" top="477" right="417" bottom="581" content="&lt;Huawei&gt;undo terminal monitor &#x0D;&#x0A;Info: Current terminal monitor is off.&#x0D;&#x0A;&lt;Huawei&gt;system-view &#x0D;&#x0A;Enter system view, return user view with Ctrl+Z.&#x0D;&#x0A;[Huawei]sysname S2&#x0D;&#x0A;[S2]stp mode stp " fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-1" txtbkcolor="-16777216" charset="1" />
+        <txttip left="420" top="369" right="831" bottom="473" content="&lt;Huawei&gt;undo terminal monitor &#x0D;&#x0A;Info: Current terminal monitor is off.&#x0D;&#x0A;&lt;Huawei&gt;system-view &#x0D;&#x0A;Enter system view, return user view with Ctrl+Z.&#x0D;&#x0A;[Huawei]sysname S3&#x0D;&#x0A;[S3]stp mode stp " fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-1" txtbkcolor="-16777216" charset="1" />
+        <txttip left="774" top="46" right="969" bottom="253" content="Tes&#x0D;&#x0A;1. ping 10.1.1.2&#x0D;&#x0A;2. ping 10.1.1.1&#x0D;&#x0A;3. tracert 10.1.1.1&#x0D;&#x0A;4. tracert 10.1.1.2&#x0D;&#x0A;5. display mac-address&#x0D;&#x0A;6. display stp bridge&#x0D;&#x0A;7. display stp&#x0D;&#x0A;&#x0D;&#x0A;simulate loop&#x0D;&#x0A;1. stp disable&#x0D;&#x0A;2. stp enable" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16744193" charset="1" />
+    </txttips>
+</topo>
